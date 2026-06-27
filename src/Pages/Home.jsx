@@ -68,7 +68,7 @@ function Home() {
           </h2>
 
           <h1 style={{
-            fontSize: '64px',
+            fontSize: '50px',
             fontWeight: '700',
             margin: '5px 0',
             textShadow: '3px 3px 6px rgba(0,0,0,0.3)',
@@ -78,7 +78,7 @@ function Home() {
           </h1>
 
           <p style={{
-            fontSize: '22px',
+            fontSize: '28px',
             fontWeight: '400',
             marginTop: '5px',
             marginBottom: '35px',

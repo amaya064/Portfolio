@@ -28,7 +28,7 @@ function Header() {
         <Link to="/" style={{ 
           textDecoration: 'none', 
           color: '#ffffff',
-          fontSize: '28px',
+          fontSize: '20px',
           fontWeight: '700',
           letterSpacing: '1px',
           textShadow: '2px 2px 4px rgba(0,0,0,0.2)'
@@ -48,7 +48,7 @@ function Header() {
             cursor: 'pointer',
             color: '#764ba2',
             textDecoration: 'none',
-            fontSize: '16px',
+            fontSize: '14px',
             fontWeight: '600',
             borderRadius: '25px',
             backgroundColor: '#ffffff',
@@ -70,7 +70,7 @@ function Header() {
           padding: '10px 18px',
           textDecoration: 'none', 
           color: '#ffffff',
-          fontSize: '16px',
+          fontSize: '14px',
           fontWeight: '500',
           borderRadius: '5px',
           transition: 'all 0.3s ease'
@@ -90,7 +90,7 @@ function Header() {
           padding: '10px 18px',
           textDecoration: 'none', 
           color: '#ffffff',
-          fontSize: '16px',
+          fontSize: '14px',
           fontWeight: '500',
           borderRadius: '5px',
           transition: 'all 0.3s ease'
@@ -110,7 +110,7 @@ function Header() {
           padding: '10px 18px',
           textDecoration: 'none', 
           color: '#ffffff',
-          fontSize: '16px',
+          fontSize: '14px',
           fontWeight: '500',
           borderRadius: '5px',
           transition: 'all 0.3s ease'
@@ -130,7 +130,7 @@ function Header() {
           padding: '10px 18px',
           textDecoration: 'none', 
           color: '#ffffff',
-          fontSize: '16px',
+          fontSize: '14px',
           fontWeight: '500',
           borderRadius: '5px',
           transition: 'all 0.3s ease'
