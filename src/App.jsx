@@ -4,9 +4,11 @@ import About from './Pages/About';
 import Education from './Pages/Education';
 import Experience from './Pages/Experience';
 import Contact from './Pages/Contact';
+import Header from './Components/Header';
 
 export default function App() {
   return <BrowserRouter>
+  <Header />
   <Routes>
      <Route path="/" element={<Home />} />
      <Route path="/about" element={<About />} />
