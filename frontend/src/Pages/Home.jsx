@@ -119,7 +119,11 @@ function Home() {
             {['GitHub', 'LinkedIn'].map((social) => (
               <a
                 key={social}
-                href="#"
+                href={social === 'GitHub' 
+                  ? 'https://github.com/amaya064' 
+                  : 'https://linkedin.com/in/amaya-bandara/'}
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
                   color: '#8892b0',
                   textDecoration: 'none',
