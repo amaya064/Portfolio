@@ -5,6 +5,7 @@ import Education from './Pages/Education';
 import Experience from './Pages/Experience';
 import Contact from './Pages/Contact';
 import Header from './Components/Header';
+import Footer from './Components/Footer';
 
 export default function App() {
   return <BrowserRouter>
@@ -16,6 +17,7 @@ export default function App() {
      <Route path="/experience" element={<Experience />} />
      <Route path="/contact" element={<Contact />} />
   </Routes>
+  <Footer />
   </BrowserRouter>;
    
   
