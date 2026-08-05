@@ -38,7 +38,7 @@ const Header = () => {
           {/* Logo / Brand */}
           <div className="flex-shrink-0">
             <Link to="/" className="text-2xl font-bold text-white tracking-tight hover:text-cyan-400 transition-colors duration-200">
-              Portfolio<span className="text-cyan-400">.</span>
+              Amaya<span className="text-cyan-400"></span>
             </Link>
           </div>
 
