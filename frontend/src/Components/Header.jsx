@@ -1,15 +1,17 @@
 // frontend/src/Components/Header.jsx
 import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
-  // Navigation links data
+  // Navigation links data with React Router paths
   const navLinks = [
-    { name: 'About', href: '#about' },
-    { name: 'Education', href: '#education' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'About', path: '/about' },
+    { name: 'Education', path: '/education' },
+    { name: 'Experience', path: '/experience' },
+    { name: 'Contact', path: '/contact' },
   ];
 
   // Handle resume download
@@ -24,27 +26,36 @@ const Header = () => {
     document.body.removeChild(link);
   };
 
+  // Check if link is active
+  const isActive = (path) => {
+    return location.pathname === path;
+  };
+
   return (
     <header className="w-full bg-gradient-to-r from-[#0a192f] via-[#112240] to-[#0a192f] shadow-lg fixed top-0 left-0 z-50 border-b border-blue-900/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 md:h-20">
           {/* Logo / Brand */}
           <div className="flex-shrink-0">
-            <a href="/" className="text-2xl font-bold text-white tracking-tight hover:text-cyan-400 transition-colors duration-200">
+            <Link to="/" className="text-2xl font-bold text-white tracking-tight hover:text-cyan-400 transition-colors duration-200">
               Portfolio<span className="text-cyan-400">.</span>
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-1 lg:space-x-2">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
-                className="px-4 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-cyan-400 hover:bg-blue-900/30 transition-all duration-200 ease-in-out"
+                to={link.path}
+                className={`px-4 py-2 rounded-md text-sm font-medium transition-all duration-200 ease-in-out ${
+                  isActive(link.path)
+                    ? 'text-cyan-400 bg-blue-900/30'
+                    : 'text-gray-300 hover:text-cyan-400 hover:bg-blue-900/30'
+                }`}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
             
             {/* Resume Button - Desktop */}
@@ -106,14 +117,18 @@ const Header = () => {
       <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden bg-[#0a192f] border-t border-blue-900/30 shadow-2xl`}>
         <div className="px-2 pt-2 pb-3 space-y-1">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.name}
-              href={link.href}
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-cyan-400 hover:bg-blue-900/30 transition-all duration-200"
+              to={link.path}
+              className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-200 ${
+                isActive(link.path)
+                  ? 'text-cyan-400 bg-blue-900/30'
+                  : 'text-gray-300 hover:text-cyan-400 hover:bg-blue-900/30'
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
               {link.name}
-            </a>
+            </Link>
           ))}
           {/* Resume Button - Mobile Menu */}
           <button
