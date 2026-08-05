@@ -33,7 +33,8 @@ function Contact() {
       fontFamily: 'Arial, sans-serif',
       position: 'relative',
       overflow: 'hidden',
-      paddingTop: '80px'
+      paddingTop: '100px', // Increased to account for header
+      paddingBottom: '60px'
     }}>
       {/* Animated Background Elements */}
       <div style={{
