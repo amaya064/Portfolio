@@ -17,10 +17,10 @@ const Header = () => {
   // Handle resume download
   const handleResumeDownload = () => {
     // Replace with your actual resume file path
-    const resumeUrl = '/resume.pdf';
+    const resumeUrl = '/Amaya.pdf';
     const link = document.createElement('a');
     link.href = resumeUrl;
-    link.download = 'My_Resume.pdf';
+    link.download = 'Amaya.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
