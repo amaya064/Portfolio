@@ -105,9 +105,21 @@ function Home() {
             marginBottom: '35px',
             opacity: 0.95,
             letterSpacing: '1px',
+            color: '#ccd6f6',
+            lineHeight: '1.2', // Reduced line height
+            margin: '2px 0'
+          }}>
+            Final year IT Undergraduate    
+          </p>
+
+          <p style={{
+            fontSize: '22px', // Reduced size
+            fontWeight: '400',
+            opacity: 0.9,
+            letterSpacing: '1px',
             color: '#ccd6f6'
           }}>
-            Final year IT Undergraduate
+            Passionate Software Testing
           </p>
 
           {/* Social Icons */}

@@ -349,6 +349,8 @@ export default function Experience() {
               </h3>
               <h4 className="company">CTMS Project <span className="project-sub">- Backend Testing</span></h4>
               <ul>
+                <li className="project-bullet">CTMS project is a self-directed learning project to gain proficiency in backend testing</li>
+                <li className="project-bullet">This project is HR management project for handle and view employee deatails easily</li>
                 <li className="project-bullet">Test the backend endpoints using Postman and create test reports</li>
               </ul>
             </div>
@@ -367,6 +369,7 @@ export default function Experience() {
               </h3>
               <h4 className="company">Pick and Go Project <span className="project-sub">- E2E Testing</span></h4>
               <ul>
+                <li className="project-bullet">Online vehicle booking app with dashboard features, loging parts, scheduling forums</li>
                 <li className="project-bullet">Tested all CRUD operations in the frontend using Cypress for this online booking app</li>
               </ul>
             </div>
@@ -385,6 +388,8 @@ export default function Experience() {
               </h3>
               <h4 className="company">Student Management System <span className="project-sub">- UI Testing</span></h4>
               <ul>
+                <li className="project-bullet">Student Management System is a self-directed learning project to gain proficiency in automated testing focus to UI Testing, Form Validation and Automation of repetitive test cases</li>
+                <li className="project-bullet">Online student management portal based for students. It has learning materials and courses with login forms, detailed dashboards and payment forms </li>
                 <li className="project-bullet">Tested the online student management portal using Selenium IDE</li>
               </ul>
             </div>
@@ -403,7 +408,9 @@ export default function Experience() {
               </h3>
               <h4 className="company">CTMS HR Project <span className="project-sub">- Frontend Testing</span></h4>
               <ul>
+                <li className="project-bullet">HR management project with logins, forms and dashboards to handle and view the employee details</li>
                 <li className="project-bullet">Manually tested the frontend and created detailed test and bug reports</li>
+                <li className="project-bullet">Create 300+ test cases</li>
               </ul>
             </div>
             <div className="experience-meta">
