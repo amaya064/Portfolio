@@ -356,7 +356,7 @@ export default function Education() {
                 G.C.E. Advanced Level
                 <span className="badge">Completed</span>
               </h3>
-              <h4 className="institution">Kegalu Balika Vidyalaya, Kegalle</h4>
+              <h4 className="institution">Swarna Jayanthi National Collge, Kegalle</h4>
               <ul>
                 <li>Completed Advanced Level examinations in the Science stream</li>
                 <li>Subjects: Biology, Chemistry, Physics</li>
